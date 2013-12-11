@@ -38,11 +38,24 @@ body {
 .jkeyboard-jk button:hover {
 	background: #EEEEEE;
 }
+.jkeyboard-jk button.jkeyboard-shift {
+	width: 57px;
+}
 </style>
 </head>
 <body>
 
 <input id="jkeyboard" type="text" />
+
+<script>
+$(document).ready(function () {
+	
+	$('#jkeyboard').jkeyboard({
+		//keys: ['jamies', 'custom', 'keys']
+	});
+	
+});
+</script>
 
 </body>
 </html>
